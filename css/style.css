@@ -1,3 +1,6 @@
-{ background: rgb(rgb(145, 91, 91), rgb(83, 139, 83), rgb(90, 90, 124))
-
+h1 { 
+    background: rgb(rgb(145, 91, 91), rgb(83, 139, 83), rgb(90, 90, 124))
+}
+p {
+    color: blue
 }

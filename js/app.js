@@ -1,10 +1,20 @@
-        var userName = prompt('Greetings what is your name?');
-        var userAge = prompt('How old are you?');
-        var userHobby = prompt('Whats your favorite hobby?');
-        var userDay = prompt('Are you a morning or night person?');
-        alert('Whats up ' + userName + '! I remember when I was '+ userAge + ' and participated in ' + userHobby + ' at ' + userDay + ' lol!');
-        console.log('The user said their name is ' + userName);
-        console.log('The user said their age is ' + userAge);
-        console.log('The user said their hobby is ' + userHobby);
-        console.log('The user said their favorite time of day is ' + userDay);
+'use strict';
+
+var userName = prompt('Hi! Welcome! I\'m Carey! What is your name?');
+alert('Hi, ' + userName + '! I am glad you are here! Let\'s play a guessing game so that you can learn more about me.');
+console.log('The user\'s name is' + userName);
+
+var answerOne = prompt('Guess this about me: have I ever been on a vacation to Key West?').toLowerCase()
+
+if (answerOne === 'y'  ||  answerOne === 'yes'){
+alert('You\re right, ' + userName + '! In fact, I am going back there in about 4 weeks!');
+console.log('User got the correct answer to #1');
+} else {
+alert('Sorry, ' + userName + ', that is incorrect. I was last there in July 2018.');
+console.log('User got the incorrect answer to #1');
+}
+
+
+        
+   
         

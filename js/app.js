@@ -4,15 +4,22 @@ var userName = prompt('Hi! Welcome! I\'m Carey! What\'s your name?');
 alert('Hi, ' + userName + '! I\'m glad you\'re here! Let\'s play a guessing game so that you can learn more about me.');
 console.log('The user\'s name is' + userName);
 
-var answerOne = prompt('Guess this about me: have I ever in any way shape or form ran over my own finger?').toLowerCase();
+function brokenFinger(){
 
-if (answerOne === 'y' || answerOne === 'yes'){
-  alert('You\'re right, ' + userName + '! I did! When I used to skateboard, I somehow rolled right over my right index finger! :D');
-  console.log('User got the correct answer to #1');
-} else {
-  alert('Sorry ' + userName + ', that\'s a big negative!');
-  console.log('User got the incorrect answer to #1');
+  var answerOne = prompt('Guess this about me: have I ever in any way shape or form ran over my own finger?').toLowerCase();
+
+  if (answerOne === 'y' || answerOne === 'yes'){
+    alert('You\'re right, ' + userName + '! I did! When I used to skateboard, I somehow rolled right over my right index finger! :D');
+    console.log('User got the correct answer to #1');
+  }else {
+    alert('Sorry ' + userName + ', that\'s a big negative!');
+    console.log('User got the incorrect answer to #1');
+  }
 }
+brokenFinger();
+
+
+//////
 var answerTwo = prompt('Do I prefer Apple over Android?').toLowerCase();
 
 if (answerTwo === 'n' || answerTwo === 'no'){
